@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Turismo Acessível</title>
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-container">
+                <h1 class="tourism">DexxVoyage</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="home-link">Home</a></li>
+                        <li><a href="#book">Agendas</a></li>
+                        <li><a href="#packages">Pacotes</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#review">Avaliações</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="accessibility-buttons">
+                    <button id="increase-font" aria-label="Aumentar Fonte">A+</button>
+                    <button id="decrease-font" aria-label="Diminuir Fonte">A-</button>
+                </div>
+                <div class="filter-section">
+                    <label for="color-filter">Filtro de Daltonismo:</label>
+                    <select id="color-filter">
+                        <option value="default">Cores padrão</option>
+                        <option value="achromatomaly">Acromatopsia</option>
+                        <option value="deuteranomaly">Deuteranomalia</option>
+                        <option value="tritanomaly">Tritanomalia</option>
+                        <option value="protanopia">Protanopia</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+             <!-- Inicio do código de libras -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Fim do código de libras -->
+        </header>
+        <main>
+            <section id="contact">
+                <h2>Contato</h2>
+                <div class="contact-container">
+                    <div class="contact-image">
+                        <img src="https://png.pngtree.com/png-clipart/20231206/original/pngtree-worldwide-traveling-plane-photo-png-image_13777643.png" alt="Avião voando sobre o mundo">
+                    </div>
+                    <form class="contact-form">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="number">Número</label>
+                        <input type="tel" id="number" name="number" required>
+                        
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                        
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" required></textarea>
+                        
+                        <button type="submit">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Turismo Acessível. Todos os direitos reservados.</p>
+            <p>Feito por: Luiz Henrique</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+<style>
+    /* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.accessibility-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+.filter-section {
+    margin-left: 20px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.tourism {
+    background: linear-gradient(to right, #009739, #009739 33.33%, #FFD700 33.33%, #FFD700 66.66%, #0033A0 66.66%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.home-link {
+  text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-image img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* Estilos para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* Fundo da página de contato */
+.contact-container {
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-travel-around-the-world-travel-poster-template-image_140335.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o formulário de contato */
+.contact-form {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+
+<script src="script.js"></script>

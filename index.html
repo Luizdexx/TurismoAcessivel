@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="header-container">
+                <h1 class="tourism">DexxVoyage</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#book">Agendas</a></li>
+                        <li><a href="#packages">Pacotes</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#review">Avaliações</a></li>
+                        <li><a href="PagContato.html"  class="contato-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="accessibility-buttons">
+                    <button id="increase-font" aria-label="Aumentar Fonte">A+</button>
+                    <button id="decrease-font" aria-label="Diminuir Fonte">A-</button>
+                </div>
+                <div class="filter-section">
+                    <label for="color-filter">Filtro de Daltonismo:</label>
+                    <select id="color-filter">
+                        <option value="default">Cores padrão</option>
+                        <option value="achromatomaly">Acromatopsia</option>
+                        <option value="deuteranomaly">Deuteranomalia</option>
+                        <option value="tritanomaly">Tritanomalia</option>
+                        <option value="protanopia">Protanopia</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+             <!-- Inicio do código de libras -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!-- Fim do código de libras -->
+        </header>
+        <main>
+            <section id="packages">
+                <h2>Principais Pacotes</h2>
+                <div class="card-container">
+                    <article class="card">
+                        <figure>
+                            <img class="filter-image" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/Lugares-para-viajar-ouro-preto.jpg" alt="Igreja de Ouro Preto">
+                            <figcaption>Igreja de Ouro Preto</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <h3>Ouro Preto, Minas Gerais</h3>
+                            <p>Entre ladeiras e ruas de pedra com casarões coloniais, vive a encantadora Ouro Preto. Esse destino histórico é repleto de igrejas de grande valor cultural e possui uma excelente estrutura turística. Situada a apenas 100 km de Belo Horizonte, Ouro Preto é ideal para um passeio de bate e volta ou para dias de imersão na história e arte do Brasil. A cidade é perfeita para caminhadas, boas refeições e para vivenciar o acolhimento caloroso dos mineiros.</p>
+                            <p class="price">R$120.00 <span class="old-price">R$150.00</span></p>
+                            <button>Agende agora</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img class="filter-image" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2018/07/o-que-fazer-em-jericoacoara.jpg" alt="Lagoas de Jericoacoara, no Ceará ">
+                            <figcaption>Lagoas de Jericoacoara, no Ceará </figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <h3>Jericoacoara, Ceará</h3>
+                            <p>Já bastante conhecida entre turistas brasileiros e estrangeiros, Jericoacoara é uma pequena vila à beira-mar, cercada por dunas e lagoas de águas cristalinas. O destino oferece hotéis, pousadas, ótimos restaurantes e belos fins de tarde na Duna do Pôr-do-Sol, uma das principais atrações. Ideal para velejadores, é também uma ótima oportunidade para quem quer aprender o esporte</p>
+                            <p class="price">R$185.00 <span class="old-price">R$200.00</span></p>
+                            <button>Agende agora</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <figure>
+                            <img class="filter-image" src="https://www.melhoresdestinos.com.br/wp-content/uploads/2020/06/olinda-pernambuco-lugares-viajar-brasil.jpeg" alt="Vista encantadora de Olinda, Pernambuco, ruas de paralelepípedo e vegetação exuberante.">
+                            <figcaption>Vista por cima de Olinda, Pernambuco, ruas de paralelepípedo e vegetação exuberante.</figcaption>
+                        </figure>
+                        <div class="card-content">
+                            <h3>Olinda, Pernambuco</h3>
+                            <p>Vizinha de Recife, Olinda atrai turistas com seu centro histórico, famoso Carnaval, e belezas naturais e urbanas. A cidade oferece praias com formações rochosas e charmosos cenários urbanos, ideais para passeios a pé por suas ladeiras e ruas de paralelepípedo, adornadas por antigas casas coloridas.</p>
+                            <p class="price">R$130.00 <span class="old-price">R$167.00</span></p>
+                            <button>Agende agora</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Turismo Acessível. Todos os direitos reservados.</p>
+            <p>Feito por: Luiz Henrique</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
